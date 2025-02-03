@@ -1,0 +1,34 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.totalOccupancyWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.totalOccupancy {
+    width: 250px;
+    text-align: center;
+}
+
+.totalOccupancy h2 {
+    margin-bottom: 20px;
+    color: #333;
+}

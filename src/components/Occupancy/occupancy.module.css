@@ -1,0 +1,51 @@
+.indicator {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.circularIndicator {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+.backgroundCircle {
+  stroke: #e0e0e0;
+}
+
+.progressCircle {
+  transition: stroke-dashoffset 0.5s ease-out, stroke 0.3s ease-in-out;
+  stroke: #4caf50;
+}
+
+.progressCircle.highOccupancy {
+  stroke: #ff5252;
+}
+
+.percentageText {
+  font-size: 24px;
+  font-weight: bold;
+  fill: #333;
+}
+
+.digital {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  margin-top: 10px;
+}

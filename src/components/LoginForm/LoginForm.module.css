@@ -1,0 +1,18 @@
+.form {
+  background-color: var(--content1, #f9f9f9);
+  border: 1px solid var(--default-100, #ddd);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 16px 0;
+  text-align: center;
+}

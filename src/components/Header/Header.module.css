@@ -1,0 +1,13 @@
+.header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.email {
+    margin-right: 12px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}

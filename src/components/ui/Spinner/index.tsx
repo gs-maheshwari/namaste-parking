@@ -1,5 +1,7 @@
-export const Spinner = ({ className }: { className: string }) => (
-  <svg className={className} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+import styles from './Spinner.module.css';
+
+const Spinner = ({ className }: { className?: string }) => (
+  <svg className={`${styles.loader} ${className}`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
     <path
       stroke="currentColor"
       strokeLinecap="round"
@@ -9,3 +11,5 @@ export const Spinner = ({ className }: { className: string }) => (
     />
   </svg>
 )
+
+export default Spinner;

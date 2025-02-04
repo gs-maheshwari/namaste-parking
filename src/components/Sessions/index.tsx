@@ -6,7 +6,7 @@ import type { ParkingSession, ParkingSessionsResponse } from "@/types"
 import { endParkingSession, getParkingSessions } from "@/services"
 import { VehicleType } from "@/lib"
 
-import { Button, Table, TableFilter } from "../ui"
+import { Button, Spinner, Table, TableFilter } from "../ui"
 import { DateTime } from "./DateTime"
 import Pagination from "../Pagination"
 
@@ -77,7 +77,7 @@ const Sessions = ({ sessionsData }: { sessionsData: ParkingSessionsResponse }) =
         render: (session: ParkingSession) =>
           !session.isSessionEnded && (
             <Button onClick={() => onEndSession(session.parkingSessionId)} disabled={endingSessionIds[session.parkingSessionId]} variant="primary">
-              {endingSessionIds[session.parkingSessionId] ? "Ending..." : "End"}
+              {endingSessionIds[session.parkingSessionId] ? <Spinner /> : "End"}
             </Button>
           ),
       },

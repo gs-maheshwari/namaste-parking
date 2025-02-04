@@ -58,7 +58,7 @@ exports[`Overview Component renders correctly and matches snapshot 1`] = `
               y="60"
             >
               2
-              %
+               %
             </text>
           </svg>
         </div>
@@ -115,7 +115,7 @@ exports[`Overview Component renders correctly and matches snapshot 1`] = `
               y="60"
             >
               10
-              %
+               %
             </text>
           </svg>
         </div>
@@ -172,7 +172,7 @@ exports[`Overview Component renders correctly and matches snapshot 1`] = `
               y="60"
             >
               80
-              %
+               %
             </text>
           </svg>
         </div>
@@ -191,12 +191,14 @@ exports[`Overview Component renders correctly and matches snapshot 1`] = `
       <div
         class="totalOccupancy"
       >
-        <h2>
-          Total Occupancy
-        </h2>
         <div
           class="indicator"
         >
+          <h3
+            class="title"
+          >
+            Total Occupancy
+          </h3>
           <div
             class="circularIndicator"
           >
@@ -234,7 +236,7 @@ exports[`Overview Component renders correctly and matches snapshot 1`] = `
                 y="60"
               >
                 17
-                %
+                 %
               </text>
             </svg>
           </div>

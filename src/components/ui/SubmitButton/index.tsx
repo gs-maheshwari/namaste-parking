@@ -3,8 +3,7 @@
 import { useFormStatus } from "react-dom";
 
 import Button, { ButtonProps } from "../Button";
-import styles from "./SubmitButton.module.css";
-import { Spinner } from "../Spinner";
+import Spinner  from "../Spinner";
 
 const SubmitButton = ({ children, ...btnProps }: ButtonProps) => {
   const { pending } = useFormStatus();
@@ -13,7 +12,7 @@ const SubmitButton = ({ children, ...btnProps }: ButtonProps) => {
     <Button type="submit" {...btnProps} disabled={pending}>
       {pending ? (
         <>
-          <Spinner className={styles.loader} />
+          <Spinner />
           Submitting...
         </>
       ) : (

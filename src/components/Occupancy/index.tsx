@@ -1,7 +1,7 @@
 import styles from "./occupancy.module.css";
 
 interface OccupancyProps {
-  title?: string;
+  title: string;
   occupancy: number;
   capacity: number;
 }
@@ -14,7 +14,7 @@ const Occupancy = ({ title, occupancy, capacity }: OccupancyProps) => {
   
   return (
     <div className={styles.indicator}>
-      {title && <h3 className={styles.title}>{title}</h3>}
+      <h3 className={styles.title}>{title}</h3>
       <div className={styles.circularIndicator}>
         <svg width="120" height="120" viewBox="0 0 120 120">
           <circle
@@ -45,7 +45,7 @@ const Occupancy = ({ title, occupancy, capacity }: OccupancyProps) => {
             dy=".3em"
             className={styles.percentageText}
           >
-            {percentage.toFixed(0)}%
+            {percentage.toFixed(0)} %
           </text>
         </svg>
       </div>

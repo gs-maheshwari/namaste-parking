@@ -1,9 +1,9 @@
 "use server";
 
-import type React from "react";
-import styles from "./overview.module.css";
-import Occupancy from "../Occupancy";
 import { ParkingSpace } from "@/types";
+import Occupancy from "../Occupancy";
+
+import styles from "./overview.module.css";
 
 const Overview = ({ parkingSpaces }: { parkingSpaces: ParkingSpace[]}) => {
   const { occupancy: residentsOccupancy = 0, capacity: residentsCapacity = 0 } =
@@ -46,8 +46,7 @@ const Overview = ({ parkingSpaces }: { parkingSpaces: ParkingSpace[]}) => {
       </div>
       <div className={styles.totalOccupancyWrapper}>
         <div className={styles.totalOccupancy}>
-          <h2>Total Occupancy</h2>
-          <Occupancy occupancy={totalOccupancy} capacity={totalCapacity} />
+          <Occupancy title="Total Occupancy" occupancy={totalOccupancy} capacity={totalCapacity} />
         </div>
       </div>
     </div>

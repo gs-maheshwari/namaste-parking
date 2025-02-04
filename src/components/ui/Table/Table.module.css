@@ -46,13 +46,3 @@
     border-radius: 0.25rem;
     font-size: 0.875rem;
 }
-
-.button {
-    background-color: #3b82f6;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    font-size: 0.875rem;
-    cursor: pointer;
-    border: none;
-}

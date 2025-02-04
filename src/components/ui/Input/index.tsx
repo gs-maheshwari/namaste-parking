@@ -1,6 +1,5 @@
 "use client";
 
-import type React from "react";
 import type { InputHTMLAttributes } from "react";
 
 import styles from "./Input.module.css";

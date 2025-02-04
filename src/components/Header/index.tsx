@@ -1,10 +1,10 @@
 "use client";
 
-import type React from "react";
-import styles from "./Header.module.css";
-import { Button } from "../ui";
 import { signOut } from "@/actions";
 import { User } from "@/types";
+import { Button } from "../ui";
+
+import styles from "./Header.module.css";
 
 const Header = ({ user }: { user: User }) => {
   return (
